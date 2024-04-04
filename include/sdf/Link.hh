@@ -428,6 +428,14 @@ namespace sdf
     /// should be subject to gravity.
     public: void SetEnableGravity(bool _enableGravity);
 
+    /// \brief Check if this link is kinematic only
+    /// \return true if the link is kinematic only, false otherwise.
+    public: bool Kinematic() const;
+
+    /// \brief Set whether this link is kinematic only.
+    /// \param[in] _kinematic True to make the link kinematic only,
+    public: void SetKinematic(bool _kinematic);
+
     /// \brief Check if the automatic calculation for the link inertial
     /// is enabled or not.
     /// \return True if automatic calculation is enabled. This can be done
